@@ -1,0 +1,15 @@
+n=float(input('enter size'))
+a=list(map(float,input().split()))
+l=[]
+r=[]
+low=0
+high=n-1
+mid=(low+high)//2
+for i in range(0,mid+1):
+    l.append(a[i])
+for i in range(mid+1,n):
+    r.append(a[i])
+r.reverse() 
+x=l+r
+for i in x:
+    print(i,end='')
